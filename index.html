@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!--Estilo CSS-->
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <!--Normalize CSS-->
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+
+    <script>
+      function tela () {
+        var altura = window.innerWidth
+        console.log(altura)
+      }
+      function removerSeta() {
+        var alturaTela = window.innerWidth
+        if (alturaTela < 630) {
+          document.getElementById("seta-slide-left").innerHTML = ''
+          document.getElementById("seta-slide-right").innerHTML = ''
+          console.log(alturaTela)
+        } else if (alturaTela > 630) {
+          document.getElementById("seta-slide-left").innerHTML = "<i class='fas fa-chevron-left'></i>"
+          document.getElementById("seta-slide-right").innerHTML = "<i class='fas fa-chevron-right'></i>"
+          console.log(alturaTela)
+        }
+        }
+      </script>
+
+    <title>Colégio Acelera</title>
+  </head>
+  <body onresize="removerSeta()">
+    <header>
+        <nav class="navbar navbar-expand-lg sticky-top">
+          <!--Logo-->
+          <div class="col-2">
+            <a href=""><img src="imagens/logo_branco.png" class="logo"></a>
+          </div>
+          <button class="navbar-toggler" data-toggle="collapse" data-target="#menu">
+            <i class="fas fa-bars resp"></i>
+          </button>
+            <div class="col-10">
+              <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item"><a href="" class="nav-link">Home</a></li>
+                  <li class="nav-item"><a href="" class="nav-link">Sobre</a></li>
+                  <li class="nav-item dropdown">
+                    <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">Turmas</a>
+                    <div class="dropdown-menu">
+                      <a href="" class="dropdown-item menu-drop">Ensino Fundamental</a>
+                      <a href="" class="dropdown-item menu-drop">Ensino Médio</a>
+                      <a href="" class="dropdown-item menu-drop">Pré Vestibular</a>
+                    </div>
+                  </li>
+                  <li class="nav-item"><a href="" class="nav-link">Projetos</a></li>
+                  <li class="nav-item"><a href="" class="nav-link">Unidades</a></li>
+                  <li class="nav-item"><a href="" class="nav-link">Contato</a></li>
+                  <li class="nav-item"><button type="button" class="btn btn-light botao-nav"><i class="fas fa-pen-alt"></i> Matricule-se</button></li>
+                  <li class="nav-item"><button type="button"  class="btn btn-light botao-nav"><i class="fas fa-user-graduate"></i> Área do Aluno</button></li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+      <!--Inicio Carousel-->
+      <div id="propagandas"  class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li class="active" data-target="#propagandas" data-slide-to="0"></li>
+          <li data-target="#propagandas" data-slide-to="1"></li>
+          <li data-target="#propagandas" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a href=""><img src="imagens/livros.jpg" class="propaganda"></a>
+          </div>
+          <div class="carousel-item">
+            <a href=""><img src="imagens/biblioteca.jpg" class="propaganda"></a>
+          </div>
+          <div class="carousel-item">
+            <a href=""><img src="imagens/professora.jpg" class="propaganda"></a>
+          </div>
+        </div>
+        <!--Controles Carousel-->
+        <a href="#propagandas" class="carousel-control-prev" data-slide="prev">
+          <i class="fas fa-chevron-circle-left"></i>
+        </a>
+        <a href="#propagandas" class="carousel-control-next" data-slide="next">
+          <i class="fas fa-chevron-circle-right"></i>
+        </a>
+      </div>
+    </header>
+    <section>
+      <div class="container box-news">
+        <h1 class="titulo-news"></i>#Acelera-News</h1>
+        <div class="row">
+          <div class="col-md-4">
+            <img src="imagens/ead.jpg">
+            <h4>Os desafios dos estudos EAD em 2020</h4>
+            <p style="color: black;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+               Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+               scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, 
+               remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+               and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+            <a href="" class="btn btn-danger">Leia mais</a>
+          </div>
+          <div class="col-md-4">
+            <img src="imagens/girl.jpg">
+            <h4>MEC estipula retorno das aulas presenciais em Setembro</h4>
+            <p style="color: black;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+              scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, 
+              remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.
+           </p>
+           <br><br>
+           <a href="" class="btn btn-danger">Leia mais</a>
+          </div>
+          <div class="col-md-4">
+            <img src="imagens/meninas.jpg">
+            <h4>Inscrições abertas para o prêmio Primeira Leitura</h4>
+            <p style="color: black;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+              scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, 
+              remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+              and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+           </p>
+           <a href="" class="btn btn-danger">Leia mais</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="jumbotron">
+      <div class="container">
+        <h2>Depoimentos</h2>
+        <div id="depoimento-slide" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="media align-self-center">
+                <img id="retira-foto1" src="imagens/aluno1.PNG" class="foto-depoimento">
+                <div class="media-body align-self-center ml-5">
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                    <h5>Fernanda Ribeiro</h5>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="media align-self-center">
+                <img id="retira-foto2" src="imagens/aluno2.PNG" class="foto-depoimento">
+                <div class="media-body align-self-center ml-5">
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                    <h5>Elisa Rocha</h5>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="media align-self-center">
+                <img id="retira-foto3" src="imagens/aluno3.PNG" class="foto-depoimento">
+                <div class="media-body align-self-center ml-5">
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                    <h5>Matheus Filipe</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="#depoimento-slide" id="seta-slide-left" class="carousel-control-prev" data-slide="prev">
+            <i class="fas fa-chevron-left"></i>
+          </a>
+          <a href="#depoimento-slide" id="seta-slide-right" class="carousel-control-next" data-slide="next">
+            <i class="fas fa-chevron-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="paralax">
+        <div class="container">
+            <h1>Venha para o melhor colégio de São Paulo</h1>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="media">
+                  <div class="icon-prop align-self-center"><i class="fas fa-graduation-cap"></i></div>
+                  <div class="media-body">
+                    <h4>Professores Doutores</h4>
+                    <p>Todos os professores que lecionam em nosso colégio possui doutorado.</p>
+                  </div>
+                </div>
+                <div class="media">
+                  <div class="icon-prop align-self-center"><i class="fas fa-book-open"></i></div>
+                  <div class="media-body">
+                    <h4>Acervo Científico</h4>
+                    <p>A biblioteca do colégio possui diversos artigos científicos ganhadores de prêmios de inovação de estudantes do mundo inteiuro.</p>
+                  </div>
+                </div>
+                <div class="media">
+                  <div class="icon-prop align-self-center"><i class="fas fa-video"></i></div>
+                  <div class="media-body">
+                    <h4>Monitoramento 24 horas</h4>
+                    <p>O colégio possui uma central de monitoramento 24 horas, trazendo mais segurança para alunos e professores.</p>
+                  </div>
+                </div>
+                <div class="media">
+                  <div class="icon-prop align-self-center"><i class="far fa-handshake"></i></div>
+                  <div class="media-body">
+                    <h4>Facilidade</h4>
+                    <p>Contratos de estudos flexíveis com facilidade de pagamento e amplo pacote de opções.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="media">
+                  <div class="icon-prop align-self-center"><i class="fas fa-university"></i></div>
+                  <div class="media-body">
+                    <h4>Universidades Internacionais</h4>
+                    <p>Nosso colégio possui parceria com universidades como Oxford e Cambridge, facilitando o intercambio de ensino.</p>
+                  </div>
+                </div>
+                <div class="media">
+                  <div class="icon-prop align-self-center"><i class="fas fa-desktop"></i></div>
+                  <div class="media-body">
+                    <h4>Informática</h4>
+                    <p>Todas as salas são equipadas com recursos de informática para o auxílio da aprendizagem.</p>
+                  </div>
+                </div>
+                <div class="media">
+                  <div class="icon-prop align-self-center"><i class="fab fa-accessible-icon"></i></div>
+                  <div class="media-body">
+                    <h4>Acessibilidade</h4>
+                    <p>Todos as áreas do colégio possuem acessibilidade para cadeirantes e deficientes visuais, além de equipe treinada com boas práticas de acessibilidade.</p>
+                  </div>
+                </div>
+                <div class="media">
+                  <div class="icon-prop align-self-center"><i class="fas fa-leaf"></i></div>
+                  <div class="media-body">
+                    <h4>Compromisso Ambiental</h4>
+                    <p>O colégio possui certificação LEED, o que demostra nosso enorme compromisso com o meio ambiente.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="btn-paralax">
+              <button class="btn btn-lg">Conheça mais</button>
+            </div>
+        </div>
+    </section>
+    <section>
+      <div class="container box">
+        <h2>A melhor infraestrutura para o seu aprendizado.</h2>
+        <div class="media">
+          <div id="control-escola" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="imagens/escola.jpg" width="400" height="250">
+              </div>
+              <div class="carousel-item">
+                <img src="imagens/escola2.jpg" width="400" height="250">
+              </div>
+              <div class="carousel-item">
+                <img src="imagens/quadra.jpg" width="400" height="250">
+              </div>
+              <div class="carousel-item">
+                <img src="imagens/brinquedoteca.jpg" width="400" height="250">
+              </div>
+              <div class="carousel-item">
+                <img src="imagens/cantina.jpg" width="400" height="250">
+              </div>
+              <div class="carousel-item">
+                <img src="imagens/carteiras.jpg" width="400" height="250">
+              </div>
+            </div>
+            <a href="#control-escola" class="carousel-control-prev" data-slide="prev">
+              <i class="fas fa-chevron-left"></i>
+            </a>
+            <a href="#control-escola" class="carousel-control-next" data-slide="next">
+              <i class="fas fa-chevron-right"></i>
+            </a>
+          </div>
+          <div class="infra">
+            <p>O Colégio Acelera é o ambiente educacional ideal e acolhedor para alunos dedicados desenvolverem sua vida em sociedade, 
+              seus valores e sua capacidade de expressão, através de estratégias de ensino anticonvencionais e tecnologias que estimulam a busca 
+              por conhecimento.</p>
+              <button class="btn btn btn-escola">Conheça mais</button>
+          </div>
+        </div>
+        <div>
+          <iframe class="mb-4" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.849855454378!2d-46.84754528441224!3d-23.46587978473044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf01a46cf9d569%3A0xe57c547cdfa5ca59!2sAnglo%20Leonardo%20da%20Vinci%20Alphaville%20-%20Fundamental%201%20e%202!5e0!3m2!1spt-BR!2sbr!4v1593364286943!5m2!1spt-BR!2sbr" 
+          frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <ul class="navbar-nav">
+              <li><a href="">Sobre</a></li>
+              <li><a href="">Projetos</a></li>
+              <li><a href="">Unidades</a></li>
+              <li><a href="">Contatos</a></li>
+              <li><a href="">Matricule-se</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <ul class="navbar-nav">
+              <li><a href="">Ensino Fundamental</a></li>
+              <li><a href="">Ensino Médio</a></li>
+              <li><a href="">Pré Vestibular</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <ul class="navbar-nav">
+              <li><a href="">Trabalhe conosco</a></li>
+              <li><a href="">Código de Ética</a></li>
+              <li><a href="">Termos de serviço</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h4>Siga-nos:</h4>
+            <a href=""><i class="fab fa-facebook"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>

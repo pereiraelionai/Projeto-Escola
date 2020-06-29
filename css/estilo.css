@@ -1,0 +1,382 @@
+body, html {
+    height: 100%;
+}
+
+body {
+    background: #ede5dc;
+}
+header {
+    background: #211f1e;
+}
+nav {
+    background: #f09100;
+}
+.logo {
+    width: 100%;
+}
+.propaganda {
+    height: 700px;
+    width: 100%;
+    opacity: 0.5;
+}
+i {
+    font-size: 3em;
+    color: white;
+    opacity: 1;
+}
+ul li {
+    padding: 10px;
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+ul li:hover {
+    padding: 10px;
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 18px;
+}   
+ul li a {
+    color: white;
+}
+ul li a:hover {
+    color: white;
+    border-bottom: 1px solid white;
+}
+.botao-nav {
+    font-weight: bold;
+    margin-top: 3px;
+}
+ul li button i {
+    color: black;
+    font-size: 18px;
+    padding-right: 5px;
+}
+.botao-nav:hover {
+    font-weight: bold;
+    margin-top: 3px;
+    background:#106462;
+    border-color: #106462;
+    color: white;
+}
+.menu-drop {
+    font-weight: bold;
+}
+.menu-drop:hover {
+    font-weight: bold;
+    color: white;
+    background: #106462;
+}
+.resp {
+    font-size: 100%;
+}
+.box-news {
+    background: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+}
+.box-news img {
+    width: 98%;
+    margin: 0px 5px;
+}
+.btn-danger {
+    background: #106462;
+    border: 1px solid #106462;
+}
+.btn-danger:hover {
+    background: #013a39;
+    border: 1px solid #013a39;
+}
+.titulo-news {
+    text-align: center;
+    padding: 30px;
+    color: #5D4446;
+    letter-spacing: 1px;
+    font-size: 3em;
+    margin-bottom: 0px;
+}
+.box-news h4 {
+    color: #5D4446;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+.box-news p {
+    margin-left: 5px;
+}
+.jumbotron {
+    background: #f09100;
+    text-align: center;
+    margin-bottom: 0px;
+}
+.jumbotron h2 {
+    color: white;
+    margin-left: 240px;
+    margin-bottom: 30px;
+}
+.jumbotron p, h5 {
+    color: white;
+}
+.foto-depoimento {
+    width: 180px;
+    height: 180px;
+    border-radius: 150px;
+}
+#depoimento-slide .fa-chevron-left {
+    margin-left: -210px;
+}
+#depoimento-slide .fa-chevron-right {
+    margin-left: 210px;
+}
+.paralax {
+    background: url(../imagens/material2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+.paralax h1 {
+    text-align: center;
+    letter-spacing: 1.5px;
+    font-size: 3em;
+    color:white;
+    padding-top: 20px;
+    padding-bottom: 60px;
+    font-weight: bold;
+}
+.icon-prop {
+    font-size: 25px;
+    margin-right: 30px;
+}
+.media-body h4, p {
+    color: white;
+}
+.media {
+    margin-bottom: 50px;
+}
+.btn-paralax {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+.btn-paralax button {
+    text-transform: uppercase;
+    background: #f09100;
+    color: white;
+    font-weight: bold;
+}
+.btn-paralax button:hover {
+    color: white;
+    background: #cc7b01;
+}
+.titulo-conheca {
+    text-align: center;
+    color: #106462;
+    padding-top: 30px;
+}
+.box {
+    background: white;
+    margin-top: 20px;
+}
+.box h2 {
+    color: #106462;
+    text-align: center;
+    padding: 30px;
+}
+.box p {
+    color: #106462;
+    font-size: 20px;
+}
+#control-escola {
+    margin-right: 30px;
+    margin-left: 10px;
+    margin-bottom: 30px;
+}
+.btn-escola {
+    text-transform: uppercase;
+    background: #106462;
+    color: white;
+    font-weight: bold;
+}
+.btn-escola:hover {
+    text-transform: uppercase;
+    background: #013a39;
+    color: white;
+    font-weight: bold;
+}
+.text-map {
+    background: #7cb38f;
+    margin-left: 30px;
+    margin-right: 10px;
+}
+.map {
+    padding-left: 30px;
+}
+footer {
+    background: #f09100;
+    margin-top: 20px;
+}
+footer ul {
+    margin: 35px 0px;
+    padding-bottom: 30px;
+}
+footer ul:hover {
+    margin: 35px 0px;
+}
+footer ul li {
+    padding: 0px;
+}
+footer ul li:hover {
+    padding: 0px;
+    
+}
+footer ul li a {
+    color: white;
+    font-size: 15px;
+    font-weight: normal
+}
+footer ul li a:hover {
+    color: white;
+    font-size: 15px;
+    font-weight: normal;
+    text-decoration: none;
+}
+footer h4 {
+    margin-top: 30px;
+    color: white;
+    font-weight: normal;
+}
+footer i {
+    font-size: 25px;
+    padding-right: 10px;
+}
+footer i:hover {
+    color: #106462;
+}
+.infra p {
+    margin-bottom: 90px;
+}
+iframe {
+    width: 100%;
+    height: 450px;
+}
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    .logo {
+        width: 120px;
+    }
+    .media {
+        display: block;
+    }
+    .infra p {
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+    .media img {
+        width: 500px;
+    }
+    .jumbotron h2 {
+        margin-left: 20px;
+    }
+    .foto-depoimento {
+        width: 0px;
+        height: 0px;
+    }
+    .jumbotron p, h5 {
+        margin-left: -20px;
+    }
+    .btn-danger {
+        margin-bottom: 10px;
+    }
+    footer i {
+        margin-bottom: 20px;
+    }
+}
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .logo {
+        width: 150px;
+    }
+    #depoimento-slide .fa-chevron-left {
+        margin-left: -120px;
+    }
+    #depoimento-slide .fa-chevron-right {
+        margin-left: 120px;
+    }
+    .media {
+        display: block;
+    }
+    .infra p {
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+    .media img {
+        width: 500px;
+    }
+    .jumbotron h2 {
+        margin-left: 20px;
+    }
+    .foto-depoimento {
+        width: 0px;
+        height: 0px;
+    }
+    .jumbotron p, h5 {
+        margin-left: -20px;
+    }
+    .btn-danger {
+        margin-bottom: 10px;
+    }
+    footer i {
+        margin-bottom: 20px;
+    }
+    }
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 1079.98px) {
+    ul li {
+        font-size: 15px;
+        padding: 0px;
+    }
+    .botao-nav {
+        margin: 3px;
+    }
+    .logo {
+        width: 150px;
+    }
+    ul li:hover {
+        padding: 0px;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    #depoimento-slide .fa-chevron-left {
+        margin-left: -180px;
+    }
+    #depoimento-slide .fa-chevron-right {
+        margin-left: 120px;
+    }
+    .infra p {
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+}
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 1080px) and (max-width: 1199.98px) {
+    ul li {
+        padding: 0px;
+    }
+    .botao-nav {
+        margin: 5px;
+    }
+    ul li:hover {
+        padding: 0px;
+        font-weight: bold;
+        font-size: 18px;
+    }
+    .infra p {
+        margin-bottom: 30px;
+    }
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {}
